@@ -1,10 +1,8 @@
 #include "pin.hpp"
 #include "debug.hpp"
 
-
-Pin::Pin()
-{
-}
+Pin::Pin(){}
+Pin::~Pin(){}
 
 Pin::Pin(int pin, int mode)
 {
@@ -56,9 +54,4 @@ void Pin::blink(int period)
     delay(period / 2);
     off();
     delay(period / 2);
-}
-
-Pin::~Pin()
-{
-    // TODO Auto-generated destructor stub
 }
